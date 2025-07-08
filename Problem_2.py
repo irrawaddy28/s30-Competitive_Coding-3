@@ -72,7 +72,7 @@ from collections import defaultdict
 def k_diff_pairs_return_count(A, K):
     N = len(A)
     if N <= 1: # cannot have pairs w/ 0 or 1 len arrays
-        return []
+        return 0
 
     map = defaultdict(int) # S: O(N)
     for j in range(N): # T: O(N)
